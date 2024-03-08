@@ -1,0 +1,257 @@
+* {
+     box-sizing: border-box;
+     margin: 0;
+     font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
+}
+*::before, *::after {
+     box-sizing: border-box;
+}
+span, a, label {
+     display: inline-block;
+}
+body {
+     padding-top: 100px;
+}
+img {
+     max-width: 100%;
+     height: auto;
+     vertical-align: middle;
+}
+.page {
+     background-color: #DC0714;
+     padding: 25px 100px;
+}
+.top {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     left: 0;
+     top: 0;
+     background-color: #DC0714;
+     z-index: 1;
+     width: 100%;
+     height: 130px;
+     padding: 0 100px;
+}
+.ul {
+     display: flex;
+     align-items: center;
+     list-style-type: none;
+     text-transform: uppercase;
+}
+.logo {
+     width: 80px;
+     margin-left: 15px;
+}
+.link {
+     display: inline-block;
+     text-decoration: none;
+     margin-right: 30px;
+     color: white;
+     font-size: 17px;
+     position: relative;
+     padding: 5px 0;
+}
+.link::before {
+     content: "";
+     position: absolute;
+     width: 0;
+     height: 3px;
+     right: 0;
+     bottom: 0;
+     background-color: white;
+     transition: 0.2s all linear;
+}
+.link:hover::before {
+     left: 0;
+     width: 100%;
+}
+.chiziq {
+     color: silver;
+     position: static;
+}
+.picsmt {
+     display: inline-block;
+     width: 100px;
+}
+.icon {
+     margin-right: 5px;
+}
+
+.flexdiv {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 50px 20px 20px;
+}
+.blue {
+     display: inline-block;
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+}
+.white {
+     background-color: rgba(0, 0, 0, 0.3);
+     border-radius: 20px;
+     padding: 10px;
+}
+.bottom {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+.box {
+     width: 32%;
+     cursor: pointer;
+     padding: 13px;
+     color: white;
+     text-transform: uppercase;
+     border-bottom: 1px solid white;
+     transition: 0.2s all linear;
+     margin-bottom: 16px;
+}
+.box:hover {
+     background-color: rgba(0, 0, 0, 0.2);
+}
+.time {
+     margin-top: 60px;
+     color: silver;
+     font-size: 16px;
+     margin-bottom: 5px;
+     transition: 0.2s all linear;
+}
+.yozuv {
+     transition: 0.2s all linear;
+}
+.box:hover .time {
+     transform: translateY(-5px);
+}
+.box:hover .yozuv {
+     transform: translateY(-5px);
+}
+
+.what {
+     width: 32%;
+     padding: 20px;
+     color: white;
+}
+.green {
+     background-color: #00634D;
+     padding: 10px;
+}
+.what {
+     padding: 13px;
+}
+.what:hover {
+     background-color: rgba(0, 0, 0, 0.30);
+}
+.right {
+     text-align: right;
+}
+.circlepic {
+     width: 200px;
+     margin: 20px 0;
+}
+.now {
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+}
+.bg {
+     background-color: black;
+     padding: 15px;
+     cursor: pointer;
+}
+.bar {
+     display: none;
+     color: white;
+     font-size: 30px;
+     margin-left: 30px;
+}
+.letter {
+     display: none;
+     color: white;
+     font-size: 40px;
+}
+.item1 {
+     position: static;
+}
+
+
+@media(max-width:1380px){
+     .page {
+          padding: 20px 40px;
+     }
+     .top {
+          padding: 0 40px;
+     }
+}
+@media(max-width:1250px){
+     .item, .logo {
+          display: none;
+     }
+     .bar {
+          display: block;
+     }
+     .letter {
+          display: block;
+          margin-left: 250px;
+     }
+     .item1 {
+          display: block;
+     }
+          text-align: center;
+     }
+}
+@media(max-width:1100px){
+     .box {
+          width: 33%;
+     }
+     .what {
+          width: 33%;
+     }
+     .page {
+          padding: 15px 30px;
+     }
+     .letter {
+          margin-left: 200px;
+     }
+}
+@media(max-width:850px){
+     .box, .what {
+          width: 100%;
+     }
+     .letter {
+          margin-left: 150px;
+     }
+     .top {
+          padding: 25px;
+          height: 80px;
+     }
+     body {
+          padding-top: 30px;
+     }
+}
+@media(max-width:650px){
+     .page {
+          padding: 10px;
+     }
+     .time {
+          margin-top: 15px;
+     }
+     .top {
+          padding: 0;
+          height: 80px;
+     }
+}
+@media(max-width:550px){
+     .letter {
+          margin-left: 130px;
+     }
+}
+@media(max-width:435px){
+     .letter {
+          margin-left: 100px;
+     }
+}
